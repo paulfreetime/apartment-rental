@@ -110,6 +110,27 @@
       border-top: 2px solid #ccc;
       margin: 4rem 0;
     }
+    audio {
+  filter: invert(1) brightness(0.7);
+  width: 320px;
+  border-radius: 0;
+  box-shadow: none !important; /* kill the glow */
+  outline: none !important;
+  border: none !important;
+}
+
+button:focus, button:active, audio:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+button:hover {
+  background: #0ff;
+  color: #111;
+  box-shadow: 0 0 12px #0ff;
+}
+
   </style>
 </head>
 <body>
@@ -153,10 +174,22 @@
         <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=80" alt="Facade" class="gallery-img">
       </div>
     </section>
+
+  <section style="display: inline-block; text-align: center;">
+   <audio id="player" controls>
+    <source src="cast.wav" type="audio/wav">
+    browser doesn’t support audio.
+   </audio>
+  <br>
+  <p style="margin: 0; color: rgb(0, 0, 0); font-family: monospace;">Listen to a clip about the apartment</p>
+  </section>
+
     <hr>
 
     <section class="section">
       <h2>Contact</h2>
+      
+     
       <p>Book a showing:</p>
       <p><strong>Email:</strong> <a href="mailto:contact@gronningen5.com">contact@gronningen5.com</a></p>
     </section>
