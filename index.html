@@ -279,7 +279,24 @@ Every inch is curated, every material selected to impress. This is understated o
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     document.getElementById('lightbox-img').src = images[currentIndex];
   }
+
+
+  document.addEventListener("keydown", function (e) {
+  if (document.getElementById('lightbox').style.display === 'flex') {
+    if (e.key === "ArrowRight") {
+      nextImage(e);
+    } else if (e.key === "ArrowLeft") {
+      prevImage(e);
+    } else if (e.key === "Escape") {
+      closeLightbox();
+    }
+  }
+});
 </script>
 
+
+
 </body>
+
+
 </html>
