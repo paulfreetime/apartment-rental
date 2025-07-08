@@ -16,7 +16,7 @@
     header {
       position: relative;
       height: 90vh;
-      background: url('https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=1920&q=80') center center / cover no-repeat;
+      background: url('images/gronningen-30.jpg') center center / cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -169,6 +169,25 @@ button:hover {
 .nav-right { right: 20px; }
 
   </style>
+  <head>
+  ...
+  <style>
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 10px;
+    }
+
+    .image-gallery img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  </style>
+  ...
+</head>
+
 </head>
 <body>
   <header>
@@ -200,16 +219,30 @@ Every inch is curated, every material selected to impress. This is understated o
 
     <section class="section">
   <h2>Gallery</h2>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" onclick="openLightbox(0)" alt="Living Room">
-    <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg" onclick="openLightbox(1)" alt="Kitchen">
-    <img src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg" onclick="openLightbox(2)" alt="Bathroom">
-    <img src="https://images.pexels.com/photos/271743/pexels-photo-271743.jpeg" onclick="openLightbox(3)" alt="Bedroom">
-    <img src="https://images.unsplash.com/photo-1592861956120-e524fc739696?auto=format&fit=crop&w=800&q=80" onclick="openLightbox(4)" alt="Balcony">
-    <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80" onclick="openLightbox(5)" alt="Courtyard">
-    <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg" onclick="openLightbox(6)" alt="Entrance">
-    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" onclick="openLightbox(7)" alt="Park">
-    <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=80" onclick="openLightbox(8)" alt="Facade">
+
+  <div class="image-gallery">
+  <img src="images/gronningen-31.jpg" alt="Living Room" onclick="openLightbox(0)">
+  <img src="images/gronningen-33.jpg" alt="2nd Living Room" onclick="openLightbox(1)">
+  <img src="images/gronningen-34.jpg" alt="2nd Living Room" onclick="openLightbox(2)">
+  <img src="images/gronningen-37.jpg" alt="Executive lounge" onclick="openLightbox(3)">
+  <img src="images/gronningen-38.jpg" alt="Executive lounge" onclick="openLightbox(4)">
+  <img src="images/gronningen-39.jpg" alt="Executive lounge with a view" onclick="openLightbox(5)">
+  <img src="images/gronningen-42.jpg" alt="Bathroom" onclick="openLightbox(6)">
+  <img src="images/gronningen-45.jpg" alt="Bedroom" onclick="openLightbox(7)">
+  <img src="images/gronningen-47.jpg" alt="Cabinet" onclick="openLightbox(8)">
+  <img src="images/gronningen-48.jpg" alt="Kitchen" onclick="openLightbox(9)">
+  <img src="images/gronningen-49.jpg" alt="Stairs" onclick="openLightbox(10)">
+  <img src="images/gronningen-50.jpg" alt="Yard" onclick="openLightbox(11)">
+  <img src="images/gronningen-51.jpg" alt="Sculpture" onclick="openLightbox(12)">
+  <img src="images/gronningen-53.jpg" alt="Sculpture2" onclick="openLightbox(13)">
+  <img src="images/gronningen-54.jpg" alt="Sculpture2" onclick="openLightbox(14)">
+  <img src="images/gronningen-56.jpg" alt="Entrance" onclick="openLightbox(15)">
+  <img src="images/gronningen-57.jpg" alt="Park1" onclick="openLightbox(16)">
+  <img src="images/gronningen-58.jpg" alt="Park1" onclick="openLightbox(17)">
+  <img src="images/gronningen-59.jpg" alt="Park1" onclick="openLightbox(18)">
+  <img src="images/gronningen-30.jpg" alt="Park1" onclick="openLightbox(19)"> 
+</div>
+
   </div>
 </section>
 
@@ -246,15 +279,26 @@ Every inch is curated, every material selected to impress. This is understated o
   </footer>
   <script>
   const images = [
-    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-    "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg",
-    "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg",
-    "https://images.pexels.com/photos/271743/pexels-photo-271743.jpeg",
-    "https://images.unsplash.com/photo-1592861956120-e524fc739696?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80",
-    "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg",
-    "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=80"
+    "images/gronningen-31.jpg",
+    "images/gronningen-33.jpg",
+    "images/gronningen-34.jpg",
+    "images/gronningen-37.jpg",
+    "images/gronningen-38.jpg",
+    "images/gronningen-39.jpg",
+    "images/gronningen-42.jpg",
+    "images/gronningen-45.jpg",
+    "images/gronningen-47.jpg",
+    "images/gronningen-48.jpg",
+    "images/gronningen-49.jpg",
+    "images/gronningen-50.jpg",
+    "images/gronningen-51.jpg",
+    "images/gronningen-53.jpg",
+    "images/gronningen-54.jpg",
+    "images/gronningen-56.jpg",
+    "images/gronningen-57.jpg",
+    "images/gronningen-58.jpg",
+    "images/gronningen-59.jpg",
+    "images/gronningen-30.jpg"
   ];
   let currentIndex = 0;
 
