@@ -1,0 +1,32 @@
+.three-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.three-images img {
+  width: 30%;
+  border-radius: 6px;
+}
+
+.three-text {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.three-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.three-text h2::after {
+  content: none;
+}
+
+.three-images {
+  margin-top: 60px; /* adjust if needed */
+}
